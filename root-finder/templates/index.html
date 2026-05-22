@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Finder</title>
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Root Finding Algorithms Visualizer</h1>
+        <h3>Esearchers-414</h3>
+        <form id="solver-form">
+            <label for="equation">Equation:</label>
+            <input type="text" id="equation" name="equation" value="">
+            <label for="interval">Interval/Guess (e.g., 0,2):</label>
+            <input type="text" id="interval" name="interval" value="">
+            <label for="method">Method:</label>
+            <select id="method" name="method">
+                <option value="Bisection">Bisection</option>
+                <option value="Newton-Raphson">Newton-Raphson</option>
+                <option value="Secant">Secant</option>
+                <option value="Regular False Position">Regular False Position</option>
+                <option value="All">All Methods</option>
+            </select>            
+            <button type="button" id="solve-button">Solve</button>
+        </form>
+        <div id="result"></div>
+        <canvas id="comparative-chart"></canvas>
+    </div>
+    <script src="/static/JS/script.js"></script>
+</body>
+</html>
